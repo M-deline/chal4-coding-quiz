@@ -1,0 +1,85 @@
+body {
+    background-color:white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#label {
+    /* display: inline-block; */
+    float:inline-end;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: right;
+}
+#display {
+    float:inline-end;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: right;
+   
+}
+
+.questions{
+    font-weight: 550;
+}
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.answers label{
+    display: block;
+    margin: 10px;
+}
+#submit-button{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    border: 0px;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    background: linear-gradient(rgb(255, 58, 153), rgb(255, 124, 194), rgb(255, 192, 221));
+    box-shadow: 0 5px 15px rgb(250, 0, 104);
+}
+
+
+#submit-button:hover{
+    box-shadow: 0 10px 20px rgb(174, 4, 89);
+}
+
+#start-button{
+    display: block;
+    background-color: greenyellow;
+    background: linear-gradient(rgb(0, 255, 0), rgb(113rgb(188, 255, 188), 113), green);
+    box-shadow: 0 5px 15px rgb(0, 255, 0);
+    
+}
+#start-button:hover{
+    box-shadow: 5px 10px 20px rgb(0, 255, 0);
+}
+
+.quiz-container {
+    position:relative;
+    height: 200px;
+    margin-top: 40px;
+}
+
+/*GIVEN I am taking a code quiz
+WHEN I click the start button
+THEN a timer starts and I am presented with a question
+WHEN I answer a question
+THEN I am presented with another question
+WHEN I answer a question incorrectly
+THEN time is subtracted from the clock
+WHEN all questions are answered or the timer reaches 0
+THEN the game is over
+WHEN the game is over
+THEN I can save my initials and my score
+```*/
+/*start everything off with 0 and basic font*/
+/* used activiites might have to change a lot but wanted basic outlone */
+
+/* make the screen for the results when submit is pressed and fix timer */
