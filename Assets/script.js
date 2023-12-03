@@ -7,7 +7,7 @@ let questionElement = document.getElementById("question");
 
 const correctIncorrectElement = document.getElementById("correct-incorrect");
 const finalEL = document.getElementById("final");
-let initials = document.getElementsByClassName("initials")
+let initials = document.getElementById("initials")
 
 const highScore = document.getElementById("highscores");
 let scoreEl = document.getElementById("highscore-list");
@@ -116,3 +116,40 @@ function checkAnswer(event) {
         nextQuestion(questionCount);
     }
 }
+submitButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    let initialsValue = initials.value; 
+
+    if (initialsValue === '') { 
+        initialsValue = 'N/A';
+    }
+
+    addUserScore(initialsValue);
+});
+
+
+
+function clearHighScores() {
+    localStorage.clear();
+    scoreEl.innerHTML = "";
+}
+clearButton.addEventListener("click", clearHighScores);
+//event listener
+startButton.addEventListener("click", startGame);
+
+const answerButton = document.querySelectorAll(".answer");
+
+
+answerButton.forEach(item =>
+    item.addEventListener("click", checkAnswer));
+
+
+returnButton.addEventListener("click", function () {
+    highScore.style.display = "none";
+    questionsElement.style.display = "none";
+    finalEL.style.display = "none";
+    startButton.style.display = "block";
+    secondsLeft = 75;
+    questionCount = 0;
+    timeElement.textContent = timeElement.textContent = `Time: ${secondsLeft}s`;
+})
