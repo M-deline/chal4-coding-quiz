@@ -21,6 +21,7 @@
 ## Contributions
 - Berhanu, Yaphi, and James Hibbard. “How to Make a Simple JavaScript Quiz.” 
 - Jacob Carver and JChance BBC tutors
+- “JavaScript Timing Events.” JavaScript Timing Events, www.w3schools.com/js/js_timing.asp. Accessed 2 Dec. 2023. 
 - “PT Sans.” Google Fonts, Google, fonts.google.com/specimen/PT+Sans. Accessed 2 Dec. 2023. 
 - SitePoint, 24 Jan. 2023, www.sitepoint.com/simple-javascript-quiz/. McGrath, Mike. HTML, CSS & JavaScript. In Easy Steps, 2020. Meyer, Eric. “Meyerweb.Com.” Meyerweb.Com, meyerweb.com/eric/tools/css/reset/. Accessed 31 July 2023. 
 - MozDevNet. “Functions - Javascript: MDN.” JavaScript | MDN, developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions. Accessed 1 Aug. 2023. MozDevNet. “Let - Javascript: MDN.” JavaScript | MDN, developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let. Accessed 3 Aug. 2023.

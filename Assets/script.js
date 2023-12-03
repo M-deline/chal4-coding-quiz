@@ -11,12 +11,10 @@ let initials = document.getElementById("initials")
 
 const highScore = document.getElementById("highscores");
 let scoreEl = document.getElementById("highscore-list");
-// let scoreList = [];
 
 let secondsLeft = 75;
 //buttons 
 const startButton = document.querySelector("#start-button");
-// const answerButton = document.querySelector(".answer");
 const firansButton = document.querySelector("#answer-1");
 const secansButton = document.querySelector("#answer-2");
 const thransButton = document.querySelector("#answer-3");
