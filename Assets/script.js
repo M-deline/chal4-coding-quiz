@@ -21,6 +21,7 @@ const firansButton = document.querySelector("#answer-1");
 const secansButton = document.querySelector("#answer-2");
 const thransButton = document.querySelector("#answer-3");
 const fouransButton = document.querySelector("#answer-4");
+const fiveansButton = document.querySelector("#answer-5");
 const submitButton = document.querySelector("#score-button");
 const returnButton = document.querySelector("#return");
 const clearButton = document.querySelector("#clear");
@@ -90,6 +91,7 @@ function nextQuestion(id) {
         secansButton.textContent = gameArray[id].options[1];
         thransButton.textContent = gameArray[id].options[2];
         fouransButton.textContent = gameArray[id].options[3];
+        fiveansButton.textContent = gameArray[id].options[4];
     }
 }
 
@@ -127,6 +129,65 @@ submitButton.addEventListener("click", function(event) {
     addUserScore(initialsValue);
 });
 
+function addUserScore(initials) {
+    let init = (typeof initials === 'string') ? initials.toUpperCase() : ''; 
+
+    if (finalEL) {
+        finalEL.style.display = "none";
+    }
+    highScore.style.display = "block";
+
+    scoreList.push({ initials: init, score: secondsLeft });
+
+    scoreList.sort(function (a, b) {
+        if (a.score > b.score) {
+            return -1;
+        } else if (a.score < b.score) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+
+    scoreEl.innerHTML = "";
+    for (let i = 0; i < scoreList.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = `${scoreList[i].initials} - ${scoreList[i].score}`;
+        scoreEl.appendChild(li);
+    }
+    showHighScores();
+
+    localStorage.setItem("scoreList", JSON.stringify(scoreList));
+}
+const viewHighscoresButton = document.querySelector("#highscores-button");
+
+viewHighscoresButton.addEventListener("click", function() {
+    showHighScores();
+});
+
+function showHighScores() {
+    const highScoresList = document.querySelector("#highscores-text");
+
+    if (highScoresList) {
+        let storageList = JSON.parse(localStorage.getItem("scoreList"));
+        if (storageList !== null) {
+            highScoresList.innerHTML = "";
+            for (let i = 0; i < storageList.length; i++) {
+                let li = document.createElement("li");
+                li.textContent = `${storageList[i].initials} - ${storageList[i].score}`;
+
+                highScoresList.appendChild(li);
+            }
+        }
+    }
+}
+
+    scoreEl.innerHTML = "";
+    for (let i = 0; i < scoreList.length; i++) {
+        let li = document.createElement("li");
+        li.textContent = `${scoreList[i].initials} - ${scoreList[i].score}`;
+        scoreEl.appendChild(li);
+    }
 
 
 function clearHighScores() {

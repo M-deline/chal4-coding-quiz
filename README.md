@@ -1,13 +1,20 @@
-# chal4word-guess-game
-
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+# Coding Quiz
+## Description
+- This is a coding quiz that uses JavaScriupt to create a timer and local storage to store high scores. There are five questions and the user gets 75 seconds to answer all of them. If the user gets an answer wrong or right it will tell them under the question section. Once the user is finsihed witht eh quiz there is a section to write their initials and submit their score so that if it is a high score it will appear at the top after selecting highscores. 
+## Challenges & Successes
+- This website was a success because it works as intended. I was able to practice my JavaScript skills and make sure that I understood using intervals and timers. 
+- I struggled with the high scores for a little while because the website recived the initials and the input and I was able to get it to show up in the console but then I struggled with displaying it. The issue was that I was trying to select a class instead of the id that I had given it in the HTML. 
+## Installation
+- Clone this repository and open VSCode on your computer.
+- Open the terminal to the directory where you cloned the repository.
+- Open the index.html file in your browser.
+- Play the game.
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+## Contributions
+- Berhanu, Yaphi, and James Hibbard. “How to Make a Simple JavaScript Quiz.” 
+- Jacob Carver and JChance BBC tutors
+- SitePoint, 24 Jan. 2023, www.sitepoint.com/simple-javascript-quiz/. McGrath, Mike. HTML, CSS & JavaScript. In Easy Steps, 2020. Meyer, Eric. “Meyerweb.Com.” Meyerweb.Com, meyerweb.com/eric/tools/css/reset/. Accessed 31 July 2023. 
+- MozDevNet. “Functions - Javascript: MDN.” JavaScript | MDN, developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions. Accessed 1 Aug. 2023. MozDevNet. “Let - Javascript: MDN.” JavaScript | MDN, developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let. Accessed 3 Aug. 2023.
