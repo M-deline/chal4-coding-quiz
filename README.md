@@ -1,4 +1,5 @@
 # Coding Quiz
+- Please click [here](https://m-deline.github.io/chal4-coding-quiz/) to play this game!
 ## Screenshots 
 - ![Screenshot of coding quiz before game starts](./readme-images/Screenshot%202023-12-02%20at%207.12.23 PM.png)
 - ![Screenshot of coding quiz during game](./readme-images/Screenshot%202023-12-02%20at%207.12.31 PM.png)
