@@ -1,5 +1,8 @@
 # Coding Quiz
 ## Screenshots 
+- ![Screenshot of coding quiz before game starts](./readme-images/Screenshot%202023-12-02%20at%207.12.23 PM.png)
+- ![Screenshot of coding quiz during game](./readme-images/Screenshot%202023-12-02%20at%207.12.31 PM.png)
+- ![Screenshot of coding quiz after game completed](./readme-images/Screenshot%202023-12-02%20at%207.12.48 PM.png)
 ## Description
 - This is a coding quiz that uses JavaScriupt to create a timer and local storage to store high scores. There are five questions and the user gets 75 seconds to answer all of them. If the user gets an answer wrong or right it will tell them under the question section. Once the user is finsihed witht eh quiz there is a section to write their initials and submit their score so that if it is a high score it will appear at the top after selecting highscores. 
 ## Challenges & Successes
