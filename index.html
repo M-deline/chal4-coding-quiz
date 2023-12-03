@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/reset.css">
     <link rel="stylesheet" href="Assets/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <title>Coding Quiz</title>
 </head>
 
@@ -16,9 +19,9 @@
                 <button id="highscores-button">View Highscores</button>
                 <p id="highscores-text"></p>
             </div>
-            <div class="timer">
-                <p id="timer">Timer: 75s</p>
-            </div>
+            <br>
+            <span id="timer-value">Timer: 75s</span>
+            <br>
         </div>
     </header>
 
@@ -27,48 +30,54 @@
         </div>
     </div>
     <div class="intro">
-        <h1>Coding Quiz Challenge</h1>
+        <div id="title-container">
+            <h1 id="title">Coding Quiz Challenge</h1>
+            <button id="start-button">Start</button>
+        </div>
     </div>
-    <div>
-        <button id="start-button">Start</button>
+    <div class="center-content">
+
+        <div id="questions">
+            <button id="submit-button">Next Question</button>
+            <div id="results"></div>
+        </div>
+        <h2 id="question">Questions:</h2>
+        <br>
+        <br>
+        <ul class="question-ul">
+            <li><button id="answer-1" value="0" class="answer">Answer</li>
+            <li><button id="answer-2" value="1" class="answer">Answer</li>
+            <li><button id="answer-3" value="2" class="answer">Answer</li>
+            <li><button id="answer-4" value="3" class="answer">Answer</li>
+        </ul>
+    </div>
+    <div id="correct-incorrect">
     </div>
 
-    <div id="questions">
-        <button id="submit-button">Next Question</button>
-        <div id="results"></div>
+    <div id="highscores">
+        <h2>High Scores</h2>
+        <br>
+        <div class="highscore-list">
+            <ol id="highscore-list">
+            </ol>
+            <button id="return">Return</button>
+            <button id="clear">Clear</button>
+        </div>
     </div>
- <h2 id="question">Questions:</h2>
-<ul class="question-ul">
-    <li><button id="answer-1" value="0" class="answer">Answer1</li>
-    <li><button id="answer-2" value="1" class="answer">Answer2</li>
-    <li><button id="answer-3" value="2" class="answer">Answer3</li>
-    <li><button id="answer-4" value="3" class="answer">Answer4</li>
-    <li><button id="answer-5" value="4" class="answer">Answer5</li>
-</ul>
-<div id="correct-incorrect">
-    <hr></hr>
-</div>
 
-<div id="highscores">
-    <h2>High Scores</h2>
-    <div class="highscore-list">
-        <ol id="highscore-list">
-        </ol>
-        <button id="return">Return</button>
-        <button id="clear">Clear</button>
+
+
+
+    <div id="final">
+        <br>
+        <h2>Final Score: </h2>
+        <br>
+        <p>Final score is <span id="score">0</span></p>
+        <div id="initials-container">
+            <p>Please enter your initials <span><input id="initials" placeholder="initials"></span></p>
+            <button id="score-button">Submit</button>
+        </div>
     </div>
-</div>
-
-
-
-
-<div id="final">
-    <h2>Final Score: </h2>
-    <p>Final score is <span id="score">0</span></p>
-    <p>Please enter your initials <span><input id="initials" placeholder="initials"></span></p>
-    <button id="score-button">Submit</button>
-</div>
-
 
 
     <script src="./Assets/script.js"></script>

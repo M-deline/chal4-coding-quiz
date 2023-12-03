@@ -1,5 +1,5 @@
-
-let timeElement = document.getElementById("timer");
+let scoreList = JSON.parse(localStorage.getItem("scoreList")) || [];
+let timeElement = document.getElementById("timer-value");
 let scoreElement = document.getElementById("score");
 
 const questionsElement = document.getElementById("questions");
@@ -11,7 +11,7 @@ let initials = document.getElementById("initials")
 
 const highScore = document.getElementById("highscores");
 let scoreEl = document.getElementById("highscore-list");
-let scoreList = [];
+// let scoreList = [];
 
 let secondsLeft = 75;
 //buttons 
@@ -21,7 +21,6 @@ const firansButton = document.querySelector("#answer-1");
 const secansButton = document.querySelector("#answer-2");
 const thransButton = document.querySelector("#answer-3");
 const fouransButton = document.querySelector("#answer-4");
-const fiveansButton = document.querySelector("#answer-5");
 const submitButton = document.querySelector("#score-button");
 const returnButton = document.querySelector("#return");
 const clearButton = document.querySelector("#clear");
@@ -91,7 +90,6 @@ function nextQuestion(id) {
         secansButton.textContent = gameArray[id].options[1];
         thransButton.textContent = gameArray[id].options[2];
         fouransButton.textContent = gameArray[id].options[3];
-        fiveansButton.textContent = gameArray[id].options[4];
     }
 }
 
