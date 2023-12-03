@@ -10,33 +10,67 @@
 </head>
 
 <body>
-    <div class="quiz-container"> <div id="quiz"></div></div>
-    <div> 
+    <header>
+        <div class="time">
+            <div class="highscores">
+                <button id="highscores-button">View Highscores</button>
+            </div>
+            <div class="timer">
+                <p id="timer">Timer: 75s</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="quiz-container">
+        <div id="quiz">
+        </div>
+    </div>
+    <div class="intro">
+        <h1>Coding Quiz Challenge</h1>
+    </div>
+    <div>
         <button id="start-button">Start</button>
     </div>
 
-    
-    <div>
-    <button id="submit-button">Next Question</button>
-    <div id="results"></div>
+    <div id="questions">
+        <button id="submit-button">Next Question</button>
+        <div id="results"></div>
     </div>
-    <div> 
-        <label id="label">Timer</label>
-        <input type="text" id="display" style="text-align: center;" readonly>
+ <h2 id="question">Questions:</h2>
+<ul class="question-ul">
+    <li><button id="answer-1" value="0" class="answer">Answer1</li>
+    <li><button id="answer-2" value="1" class="answer">Answer2</li>
+    <li><button id="answer-3" value="2" class="answer">Answer3</li>
+    <li><button id="answer-4" value="3" class="answer">Answer4</li>
+</ul>
+<div id="correct-incorrect">
+    <hr></hr>
+</div>
+
+<div id="highscores">
+    <h2>High Scores</h2>
+    <div class="highscore-list">
+        <ol id="highscore-list">
+        </ol>
+        <button id="return">Return</button>
+        <button id="clear">Clear</button>
     </div>
-    <h3 id="question"></h3>
-    <button id="option1"></button>
-    <button id="option2"></button>
-    <button id="option3"></button>
-    <button id="option4"></button>
-   <div id="scores" style="display: none">
-   <ol>
-    <li id="score"></li>
-   </ol>
-   </div> 
-   <script src="./Assets/script.js"></script>
+</div>
+
+
+
+
+<div id="final">
+    <h2>Final Score: </h2>
+    <p>Final score is <span id="score">0</span></p>
+    <p>Please enter your initials <span class="initials"><input placehpolder="initials"></span></p>
+    <button id="score-button">Submit</button>
+</div>
+
+
+
+    <script src="./Assets/script.js"></script>
 </body>
 
 
 </html>
-<!-- div hidden then set to show  -->
